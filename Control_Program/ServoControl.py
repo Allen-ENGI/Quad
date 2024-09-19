@@ -8,19 +8,19 @@ pwm = GPIO.PWM(37, 50)
 #initialize the duty cycle
 pwm.start(0)
 
-def wait(angle):
-    #5V
-    time = angle/60 * 0.16
-    #6V
-    time = angle/60 * 0.14
-    return time
+# def wait(angle):
+#     #5V
+#     time = angle/60 * 0.16
+#     #6V
+#     time = angle/60 * 0.14
+#     return time
     
 def SetAngle(angle):
 
     #range from 2.5% to 12.5%
     duty = angle/18 + 2.5
-    time = duty * 2
-    print(duty)
+    # time = duty * 2
+    # print(duty)
     GPIO.output(37, True)
     pwm.ChangeDutyCycle(duty)
     #sleep time to reach the angle
