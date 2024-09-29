@@ -195,9 +195,7 @@
     <visual>
       <origin rpy="-3.1415 0 0" xyz="0 0 0"/>
       <geometry>
-        <!-- <mesh filename="package://urdf_test/meshes/l_finger.dae"/> -->
-        <mesh filename="package://urdf_test/meshes/Thigh-down_Right_v4_1.stl"/>
-
+        <mesh filename="package://urdf_test/meshes/l_finger.dae"/>
       </geometry>
     </visual>
   </link>
@@ -211,13 +209,8 @@
     <visual>
       <origin rpy="-3.1415 0 0" xyz="0.09137 0.00495 0"/>
       <geometry>
-        <!-- <mesh filename="package://urdf_test/meshes/l_finger_tip.dae"/> -->
-        <mesh filename="package://urdf_test/meshes/servo_arm_v3__1__1.stl" scale="1 1 1"/>
-
+        <mesh filename="package://urdf_test/meshes/l_finger_tip.dae"/>
       </geometry>
-        <material>
-            <color rgba="0.5 0.5 0.5 1.0"/> <!-- Gray color -->
-        </material>
     </visual>
   </link>
 
