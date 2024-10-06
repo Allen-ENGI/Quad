@@ -14,7 +14,7 @@ Blog Post:
 
 ## How To Run
 
-
+##modified, only need launch robot_state_publisher after build the pkg
 1. Build the package with colcon.
 2. Launch the `robot_state_publisher` launch file with `ros2 launch urdf_example rsp.launch.py`.
 3. Launch `joint_state_publisher_gui` with `ros2 run joint_state_publisher_gui joint_state_publisher_gui`. You may need to install it if you don't have it already.
