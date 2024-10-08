@@ -4,6 +4,7 @@
 <xacro:include filename="materials.xacro" />
 <xacro:include filename="urdf_model2.trans" />
 <xacro:include filename="urdf_model2.gazebo" />
+
 <link name="base_link">
   <inertial>
     <origin xyz="-8.881784197001253e-18 -1.7763568394002505e-17 1" rpy="0 0 0"/>
@@ -109,6 +110,27 @@
   </collision>
 </link>
 
+<link name="arm_r4">
+  <inertial>
+    <origin xyz="0.002999999999999961 -0.00012469398295934797 0.008981178939689903" rpy="0 0 0"/>
+    <mass value="0.016544213046378313"/>
+    <inertia ixx="2e-06" iyy="1e-06" izz="0.0" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.06 -0.0975 -0.01" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://my_bot/meshes/arm_r4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.06 -0.0975 -0.01" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://my_bot/meshes/arm_r4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
 <joint name="Rigid 5" type="fixed">
   <origin xyz="0.06 0.11 0.0" rpy="0 0 0"/>
   <parent link="base_link"/>
@@ -131,6 +153,13 @@
   <origin xyz="-0.06 -0.11 0.0" rpy="0 0 0"/>
   <parent link="base_link"/>
   <child link="urdf_case4"/>
+</joint>
+
+<joint name="arm_case" type="continuous">
+  <origin xyz="0.0 0.0125 0.035" rpy="0 0 0"/>
+  <parent link="urdf_case2"/>
+  <child link="arm_r4"/>
+  <axis xyz="-1 0 0"/>
 </joint>
 
 </robot>
