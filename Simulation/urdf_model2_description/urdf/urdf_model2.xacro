@@ -1,0 +1,360 @@
+<?xml version="1.0" ?>
+<robot name="urdf_model2" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find urdf_model2_description)/urdf/materials.xacro" />
+<xacro:include filename="$(find urdf_model2_description)/urdf/urdf_model2.trans" />
+<xacro:include filename="$(find urdf_model2_description)/urdf/urdf_model2.gazebo" />
+<link name="base_link">
+  <inertial>
+    <origin xyz="-8.881784197001253e-18 -1.7763568394002505e-17 -0.0050000000000000044" rpy="0 0 0"/>
+    <mass value="1.8212"/>
+    <inertia ixx="0.006618" iyy="0.001866" izz="0.008454" ixy="0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find urdf_model2_description)/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find urdf_model2_description)/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="urdf_case3_1">
+  <inertial>
+    <origin xyz="-0.005000000000000032 -0.02725000000001962 0.02249999999999998" rpy="0 0 0"/>
+    <mass value="0.17920403874143231"/>
+    <inertia ixx="7.3e-05" iyy="3.2e-05" izz="4.4e-05" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.06 -0.11 0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find urdf_model2_description)/meshes/urdf_case3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.06 -0.11 0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find urdf_model2_description)/meshes/urdf_case3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="urdf_case1_1">
+  <inertial>
+    <origin xyz="-0.005000000000000018 0.02724999999998083 0.022500000000000266" rpy="0 0 0"/>
+    <mass value="0.17920403874143231"/>
+    <inertia ixx="7.3e-05" iyy="3.2e-05" izz="4.4e-05" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.06 0.11 0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find urdf_model2_description)/meshes/urdf_case1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.06 0.11 0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find urdf_model2_description)/meshes/urdf_case1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="urdf_case4_1">
+  <inertial>
+    <origin xyz="0.005000000000000018 -0.02725000000001962 0.022500000000000006" rpy="0 0 0"/>
+    <mass value="0.17920403874143234"/>
+    <inertia ixx="7.3e-05" iyy="3.2e-05" izz="4.4e-05" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.06 -0.11 0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find urdf_model2_description)/meshes/urdf_case4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.06 -0.11 0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find urdf_model2_description)/meshes/urdf_case4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="urdf_case2_1">
+  <inertial>
+    <origin xyz="0.005000000000000025 0.027249999999980817 0.022500000000000204" rpy="0 0 0"/>
+    <mass value="0.17920403874143231"/>
+    <inertia ixx="7.3e-05" iyy="3.2e-05" izz="4.4e-05" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.06 0.11 0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find urdf_model2_description)/meshes/urdf_case2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.06 0.11 0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find urdf_model2_description)/meshes/urdf_case2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="arm_r1_1">
+  <inertial>
+    <origin xyz="0.002999999999999989 -0.0001246939829592647 0.008981178939690256" rpy="0 0 0"/>
+    <mass value="0.016544213046378313"/>
+    <inertia ixx="2e-06" iyy="1e-06" izz="0.0" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.06 0.0975 -0.035" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find urdf_model2_description)/meshes/arm_r1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.06 0.0975 -0.035" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find urdf_model2_description)/meshes/arm_r1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="arm_r2_1">
+  <inertial>
+    <origin xyz="0.0029999999999999333 -0.00012469398295902878 0.008981178939690188" rpy="0 0 0"/>
+    <mass value="0.016544213046378313"/>
+    <inertia ixx="2e-06" iyy="1e-06" izz="0.0" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.06 0.068 -0.01" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find urdf_model2_description)/meshes/arm_r2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.06 0.068 -0.01" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find urdf_model2_description)/meshes/arm_r2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="arm_r3_1">
+  <inertial>
+    <origin xyz="0.002999999999999947 -0.00012469398295987533 0.008981178939689971" rpy="0 0 0"/>
+    <mass value="0.016544213046378313"/>
+    <inertia ixx="2e-06" iyy="1e-06" izz="0.0" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.06 -0.068 -0.035" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find urdf_model2_description)/meshes/arm_r3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.06 -0.068 -0.035" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find urdf_model2_description)/meshes/arm_r3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="arm_r4_1">
+  <inertial>
+    <origin xyz="0.002999999999999961 -0.00012469398295934797 0.008981178939689903" rpy="0 0 0"/>
+    <mass value="0.016544213046378313"/>
+    <inertia ixx="2e-06" iyy="1e-06" izz="0.0" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.06 -0.0975 -0.01" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find urdf_model2_description)/meshes/arm_r4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.06 -0.0975 -0.01" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find urdf_model2_description)/meshes/arm_r4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="arm_l1_1">
+  <inertial>
+    <origin xyz="-0.002999999999999989 -0.00012469398295948675 0.008981178939690186" rpy="0 0 0"/>
+    <mass value="0.016544213046378313"/>
+    <inertia ixx="2e-06" iyy="1e-06" izz="0.0" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.06 0.0975 -0.035" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find urdf_model2_description)/meshes/arm_l1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.06 0.0975 -0.035" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find urdf_model2_description)/meshes/arm_l1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="arm_l2_1">
+  <inertial>
+    <origin xyz="-0.0030000000000000165 -0.00012469398295930634 0.008981178939690188" rpy="0 0 0"/>
+    <mass value="0.016544213046378313"/>
+    <inertia ixx="2e-06" iyy="1e-06" izz="0.0" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.06 0.068 -0.01" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find urdf_model2_description)/meshes/arm_l2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.06 0.068 -0.01" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find urdf_model2_description)/meshes/arm_l2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="arm_l3_1">
+  <inertial>
+    <origin xyz="-0.0030000000000000443 -0.00012469398295994472 0.008981178939689971" rpy="0 0 0"/>
+    <mass value="0.016544213046378313"/>
+    <inertia ixx="2e-06" iyy="1e-06" izz="0.0" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.06 -0.068 -0.035" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find urdf_model2_description)/meshes/arm_l3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.06 -0.068 -0.035" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find urdf_model2_description)/meshes/arm_l3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="arm_l4_1">
+  <inertial>
+    <origin xyz="-0.0029999999999999333 -0.00012469398295955614 0.008981178939690011" rpy="0 0 0"/>
+    <mass value="0.016544213046378313"/>
+    <inertia ixx="2e-06" iyy="1e-06" izz="0.0" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.06 -0.0975 -0.01" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find urdf_model2_description)/meshes/arm_l4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.06 -0.0975 -0.01" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find urdf_model2_description)/meshes/arm_l4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="Rigid 5" type="fixed">
+  <origin xyz="0.06 0.11 0.0" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="urdf_case3_1"/>
+</joint>
+
+<joint name="Rigid 6" type="fixed">
+  <origin xyz="0.06 -0.11 0.0" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="urdf_case1_1"/>
+</joint>
+
+<joint name="Rigid 7" type="fixed">
+  <origin xyz="-0.06 0.11 0.0" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="urdf_case4_1"/>
+</joint>
+
+<joint name="Rigid 8" type="fixed">
+  <origin xyz="-0.06 -0.11 0.0" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="urdf_case2_1"/>
+</joint>
+
+<joint name="arm_case1" type="continuous">
+  <origin xyz="0.0 0.0125 0.035" rpy="0 0 0"/>
+  <parent link="urdf_case1_1"/>
+  <child link="arm_r1_1"/>
+  <axis xyz="-1.0 -0.0 0.0"/>
+</joint>
+
+<joint name="arm_case2" type="continuous">
+  <origin xyz="0.0 0.042 0.01" rpy="0 0 0"/>
+  <parent link="urdf_case1_1"/>
+  <child link="arm_r2_1"/>
+  <axis xyz="-1.0 -0.0 0.0"/>
+</joint>
+
+<joint name="arm_case3" type="continuous">
+  <origin xyz="0.0 -0.042 0.035" rpy="0 0 0"/>
+  <parent link="urdf_case3_1"/>
+  <child link="arm_r3_1"/>
+  <axis xyz="-1.0 -0.0 -0.0"/>
+</joint>
+
+<joint name="arm_case4" type="continuous">
+  <origin xyz="0.0 -0.0125 0.01" rpy="0 0 0"/>
+  <parent link="urdf_case3_1"/>
+  <child link="arm_r4_1"/>
+  <axis xyz="-1.0 -0.0 -0.0"/>
+</joint>
+
+<joint name="Revolute 13" type="continuous">
+  <origin xyz="0.0 0.0125 0.035" rpy="0 0 0"/>
+  <parent link="urdf_case2_1"/>
+  <child link="arm_l1_1"/>
+  <axis xyz="-1.0 -0.0 -0.0"/>
+</joint>
+
+<joint name="Revolute 14" type="continuous">
+  <origin xyz="0.0 0.042 0.01" rpy="0 0 0"/>
+  <parent link="urdf_case2_1"/>
+  <child link="arm_l2_1"/>
+  <axis xyz="-1.0 -0.0 -0.0"/>
+</joint>
+
+<joint name="Revolute 15" type="continuous">
+  <origin xyz="0.0 -0.042 0.035" rpy="0 0 0"/>
+  <parent link="urdf_case4_1"/>
+  <child link="arm_l3_1"/>
+  <axis xyz="-1.0 -0.0 -0.0"/>
+</joint>
+
+<joint name="Revolute 16" type="continuous">
+  <origin xyz="0.0 -0.0125 0.01" rpy="0 0 0"/>
+  <parent link="urdf_case4_1"/>
+  <child link="arm_l4_1"/>
+  <axis xyz="-1.0 -0.0 -0.0"/>
+</joint>
+
+</robot>
