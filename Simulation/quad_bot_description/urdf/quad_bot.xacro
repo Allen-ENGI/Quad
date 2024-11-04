@@ -6,7 +6,7 @@
 <xacro:include filename="$(find quad_bot_description)/urdf/quad_bot.gazebo" />
 <link name="base_link">
   <inertial>
-    <origin xyz="0.003730155120865364 0.010224541960376268 0.024166462621581543" rpy="0 0 0"/>
+    <origin xyz="0.0037301551208653735 0.01022454196037646 0.024166462621581574" rpy="0 0 0"/>
     <mass value="1.8212"/>
     <inertia ixx="0.006618" iyy="0.001866" izz="0.008454" ixy="0.0" iyz="0.0" ixz="-0.0"/>
   </inertial>
